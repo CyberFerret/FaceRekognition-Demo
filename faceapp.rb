@@ -32,7 +32,6 @@ post '/upload/:photoid' do
       bytes: request.body.read.to_s
     }
   })
-  puts response.to_h
   "Image uploaded safely!"
 end
 
@@ -48,7 +47,6 @@ post '/compare' do
       bytes: request.body.read.to_s
     }
   })
-  puts response.to_h
   if response.face_matches.count > 1
     {:message => "Too many faces found"}.to_json
   elsif response.face_matches.count == 0
@@ -67,7 +65,6 @@ post '/speech' do
     voice_id: "Joanna",
     text: params[:tosay]
   })
-  puts response.to_h
   Base64.encode64(response.audio_stream.string)
 end
 
