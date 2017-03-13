@@ -1,0 +1,31 @@
+GEM
+  specs:
+    aws-sdk (2.7.7)
+      aws-sdk-resources (= 2.7.7)
+    aws-sdk-core (2.7.7)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.7.7)
+      aws-sdk-core (= 2.7.7)
+    aws-sigv4 (1.0.0)
+    dotenv (2.2.0)
+    jmespath (1.3.1)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aws-sdk
+  dotenv
+  sinatra
+
+BUNDLED WITH
+   1.12.5
